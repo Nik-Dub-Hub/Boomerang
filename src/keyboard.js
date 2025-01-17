@@ -35,4 +35,6 @@ function runInteractiveConsole(hero) {
 
 // Давай попробуем запустить этот скрипт!
 
-runInteractiveConsole();
+// runInteractiveConsole();
+
+module.exports = runInteractiveConsole

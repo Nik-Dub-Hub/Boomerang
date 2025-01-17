@@ -1,5 +1,6 @@
 // Сделаем отдельный класс для отображения игры в консоли.
-
+const { input } = require('@inquirer/prompts')
+const Model = require('../Model')
 class View {
   render(view) {
     const yourTeamName = 'Elbrus';
@@ -10,6 +11,13 @@ class View {
     console.log('\n\n');
     console.log(`Created by "${yourTeamName}" with love`);
   }
+
+  static async getName(){
+    const name  = await input({ message: 'Введи свое имя:' })
+    await Model.saveUser({name})
+     
+  }
+  
 }
 
 module.exports = View;
