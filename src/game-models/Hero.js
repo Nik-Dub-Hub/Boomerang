@@ -9,7 +9,6 @@ class Hero {
   }
 
   moveLeft() {
-    // Идём влево.
     this.position -= 1;
   }
 

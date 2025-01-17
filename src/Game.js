@@ -5,7 +5,6 @@
 const Hero = require('./game-models/Hero');
 const Enemy = require('./game-models/Enemy');
 const Boomerang = require('./game-models/Boomerang');
-const Boomerang = require('./game-models/Boomerang');
 const View = require('./View');
 const runInteractiveConsole = require('./keyboard')
 
