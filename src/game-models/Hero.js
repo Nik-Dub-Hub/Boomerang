@@ -2,9 +2,10 @@
 
 class Hero {
   constructor({ position, boomerang }) {
-    this.skin = 'H'; // можете использовать любые emoji '💃'
+    this.skin = '🤠'; // можете использовать любые emoji '💃'
     this.position = position;
-    this.boomerang = boomerang
+    this.boomerang = boomerang;
+    this.points = 0;
   }
 
   moveLeft() {
@@ -26,6 +27,10 @@ class Hero {
     this.skin = '💀';
     console.log('YOU ARE DEAD!💀');
     process.exit();
+  }
+
+  getPoints() {
+    this.points += 10;
   }
 }
 
